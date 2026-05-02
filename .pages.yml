@@ -4,8 +4,8 @@ media:
 content:
   - name: settings
     label: Site Content
-    type: settings
-    file: content/data.json
+    type: file
+    path: content/data.json
     fields:
       - name: hero
         label: Hero Section
