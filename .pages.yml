@@ -19,13 +19,15 @@ content:
             type: string
           - name: typed_text
             label: Typed Text (Roles)
-            type: list
+            type: string
+            list: true
           - name: subtitle
             label: Subtitle
             type: text
           - name: highlights
             label: Highlights
-            type: list
+            type: string
+            list: true
       - name: about
         label: About Section
         type: object
@@ -35,7 +37,8 @@ content:
             type: text
           - name: cards
             label: Info Cards
-            type: object-list
+            type: object
+            list: true
             fields:
               - name: icon
                 label: FontAwesome Icon Class
@@ -48,7 +51,8 @@ content:
                 type: text
           - name: stats
             label: Statistics
-            type: object-list
+            type: object
+            list: true
             fields:
               - name: number
                 label: Number
@@ -58,7 +62,8 @@ content:
                 type: string
       - name: experience
         label: Experience
-        type: object-list
+        type: object
+        list: true
         fields:
           - name: date
             label: Date Range
@@ -71,17 +76,20 @@ content:
             type: string
           - name: projects
             label: Projects
-            type: object-list
+            type: object
+            list: true
             fields:
               - name: title
                 label: Project Title
                 type: string
               - name: bullets
                 label: Bullet Points
-                type: list
+                type: string
+                list: true
       - name: projects
         label: Case Studies
-        type: object-list
+        type: object
+        list: true
         fields:
           - name: label
             label: Type Label
@@ -97,7 +105,8 @@ content:
             type: text
           - name: details
             label: Details Sections
-            type: object-list
+            type: object
+            list: true
             fields:
               - name: heading
                 label: Heading
@@ -107,10 +116,12 @@ content:
                 type: text
           - name: tags
             label: Tags
-            type: list
+            type: string
+            list: true
       - name: skills
         label: Skills
-        type: object-list
+        type: object
+        list: true
         fields:
           - name: icon
             label: FontAwesome Icon Class
@@ -120,10 +131,12 @@ content:
             type: string
           - name: skills_list
             label: Skills
-            type: list
+            type: string
+            list: true
       - name: education
         label: Education
-        type: object-list
+        type: object
+        list: true
         fields:
           - name: icon
             label: FontAwesome Icon Class
