@@ -1,0 +1,217 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Tirthesh Patil",
+    "typed_text": ["Product Manager", "Problem Solver", "Platform Builder"],
+    "subtitle": "Product Manager with a technical foundation, focused on fintech and platform products. I turn business requirements into clear product direction, aligned teams, and shipped user experiences.",
+    "highlights": [
+      "FinTech & Platform Products",
+      "0-to-1 + Scale-up Delivery",
+      "Business, UX, and Engineering Alignment"
+    ]
+  },
+  "about": {
+    "lead_html": "I bridge the gap between <span class=\"text-accent\">business priorities</span>, <span class=\"text-accent\">user needs</span>, and <span class=\"text-accent\">technical execution</span> so teams can move from ambiguity to launch with confidence.",
+    "cards": [
+      {
+        "icon": "fas fa-rocket",
+        "title": "What I Do",
+        "description": "I lead products from opportunity discovery and requirements shaping through development, launch, and iteration, keeping business goals and delivery realities aligned."
+      },
+      {
+        "icon": "fas fa-lightbulb",
+        "title": "How I Work",
+        "description": "I simplify messy problem spaces, define what matters, and help cross-functional teams make decisions quickly without losing sight of customer value."
+      },
+      {
+        "icon": "fas fa-compass",
+        "title": "Where I Add Value",
+        "description": "Especially effective in fast-moving teams that need structured product thinking, stakeholder alignment, and someone who can translate between business and engineering."
+      }
+    ],
+    "stats": [
+      {
+        "number": "2+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "5+",
+        "label": "Products Delivered"
+      },
+      {
+        "number": "9.45",
+        "label": "CGPA"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "date": "Dec 2024 — Present",
+      "title": "Product Manager",
+      "subtitle": "Jio Platforms Limited • Navi Mumbai",
+      "projects": [
+        {
+          "title": "Little Nest (Children's Club Management App & Web Platform)",
+          "bullets": [
+            "Led end-to-end delivery of the mobile and web experience covering bookings, class creation, and admin workflows.",
+            "Translated client and operational requirements into product scope, release priorities, and implementation-ready decisions.",
+            "Worked across stakeholders, design, and engineering to keep launches moving while balancing usability and execution constraints.",
+            "Supported post-launch operations, issue resolution, and iteration to improve the day-to-day booking experience.",
+            "Owned adoption conversations with client teams, helping turn a delivered platform into a usable operating workflow."
+          ]
+        },
+        {
+          "title": "Jio Financial Services (All-in-One Finance App)",
+          "bullets": [
+            "Owned parts of the UPI product lifecycle, aligning user experience, compliance requirements, and partner coordination.",
+            "Contributed to products spanning Account Aggregator capabilities and relationship management workflows.",
+            "Helped shape an AI-enabled financial marketplace experience across deposits, lending, cards, and related offerings.",
+            "Converted business and regulatory needs into clear requirements that engineering teams could execute with confidence.",
+            "Worked with internal teams and external partners to support integrations, launches, and product readiness.",
+            "Tracked product signals and KPIs to inform prioritization and iteration after release."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Dec 2023 — Dec 2024",
+      "title": "Team Lead — Assistant Product Manager",
+      "subtitle": "Jio Platforms Limited • Navi Mumbai",
+      "projects": [
+        {
+          "title": "Govt. Engagements, Asset Mgmt, AI Chatbots",
+          "bullets": [
+            "Drove user story reviews and backlog refinement so teams could move from discussion to execution with less ambiguity.",
+            "Balanced scope, timelines, and stakeholder expectations across multiple initiatives running in parallel.",
+            "Coordinated testing, operations, and delivery readiness to support smoother releases.",
+            "Facilitated agile ceremonies and team rituals that improved alignment across business and engineering stakeholders.",
+            "Built context across government, asset management, and AI-focused use cases, adapting product thinking to each domain."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Apr 2019 — Jun 2019",
+      "title": "Frontend Web Developer",
+      "subtitle": "Digital Edge Technologies • Mumbai",
+      "projects": [
+        {
+          "title": "Frontend Web Development",
+          "bullets": [
+            "Built responsive front-end experiences with a strong focus on usability and client requirements.",
+            "Worked directly with stakeholders to understand expectations and convert them into deliverables.",
+            "Supported launch communication through PR emailers and campaign assets."
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "label": "Product Case Study",
+      "title": "Little Nest Club Management Platform",
+      "icon": "fas fa-child-reaching",
+      "summary": "A mobile and web platform for managing classes, bookings, and admin workflows for a children's club business.",
+      "details": [
+        {
+          "heading": "The Problem",
+          "text": "Operations needed one reliable system for class creation, slot management, bookings, and day-to-day administration."
+        },
+        {
+          "heading": "What I Drove",
+          "text": "Requirement shaping, stakeholder coordination, prioritization, launch planning, and post-release iteration."
+        },
+        {
+          "heading": "Outcome",
+          "text": "A more structured operating workflow that supported adoption, issue resolution, and smoother customer-facing booking journeys."
+        }
+      ],
+      "tags": ["0-to-1 Delivery", "Mobile + Web", "Operations", "Stakeholder Alignment"]
+    },
+    {
+      "label": "Product Case Study",
+      "title": "Financial Marketplace & Payments Experience",
+      "icon": "fas fa-building-columns",
+      "summary": "A connected fintech product space spanning UPI, partner integrations, and marketplace journeys across financial products.",
+      "details": [
+        {
+          "heading": "The Problem",
+          "text": "Fintech products needed to balance compliance, partner dependencies, and a user experience simple enough to drive adoption."
+        },
+        {
+          "heading": "What I Drove",
+          "text": "Cross-functional coordination, product requirement definition, integration readiness, and KPI-aware iteration."
+        },
+        {
+          "heading": "Outcome",
+          "text": "Delivery moved forward with clearer requirements, stronger execution alignment, and a better foundation for scale and optimization."
+        }
+      ],
+      "tags": ["FinTech", "UPI", "Compliance", "Partner Integrations"]
+    },
+    {
+      "label": "Technical Project",
+      "title": "Parking Management System",
+      "icon": "fas fa-square-parking",
+      "summary": "A product concept built around real-time slot visibility, booking flows, and admin-side management.",
+      "details": [
+        {
+          "heading": "The Problem",
+          "text": "Users and operators needed better visibility into parking availability and fewer manual coordination steps."
+        },
+        {
+          "heading": "What I Built",
+          "text": "A mobile app plus web dashboard experience covering slot discovery, bookings, and operational control."
+        },
+        {
+          "heading": "Why It Matters",
+          "text": "It reflects my technical grounding and ability to think through both customer-side and admin-side workflows."
+        }
+      ],
+      "tags": ["Mobile App", "Web Dashboard", "Admin Panel"]
+    }
+  ],
+  "skills": [
+    {
+      "icon": "fas fa-diagram-project",
+      "title": "Product & Technical",
+      "skills_list": [
+        "PRD", "User Stories", "Figma / Wireframing", "Prototyping", "PoC",
+        "Project Planning", "KPIs", "SQL", "Postman", "MS Excel",
+        "Google Analytics", "MERN Stack"
+      ]
+    },
+    {
+      "icon": "fas fa-briefcase",
+      "title": "Business",
+      "skills_list": [
+        "Market Research", "Strategic Thinking", "Stakeholder Management",
+        "Compliance (FinTech)", "Financial Acumen", "Product Lifecycle Mgmt",
+        "Data-Driven Decisions"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "icon": "fas fa-graduation-cap",
+      "title": "B.E., Information Technology",
+      "school": "Vidyalankar Institute of Technology",
+      "meta": "Mumbai, MH • June 2023",
+      "score": "9.45 CGPA"
+    },
+    {
+      "icon": "fas fa-award",
+      "title": "Diploma, Computer Engineering",
+      "school": "Vidyalankar Polytechnic",
+      "meta": "Mumbai, MH • November 2020",
+      "score": "92.86%"
+    }
+  ],
+  "contact": {
+    "email": "tirthesh18@gmail.com",
+    "phone": "+91 9518750662",
+    "location": "Navi Mumbai, Maharashtra",
+    "linkedin": "linkedin.com/in/tirthesh-patil",
+    "linkedin_url": "https://in.linkedin.com/in/tirthesh-patil"
+  }
+}

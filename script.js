@@ -1,3 +1,175 @@
+
+// CMS Data State
+let cmsData = null;
+
+async function fetchCMSData() {
+  try {
+    const res = await fetch('content/data.json');
+    if (res.ok) {
+      cmsData = await res.json();
+      applyCMSData();
+    }
+  } catch (err) {
+    console.error('Error fetching CMS data:', err);
+  }
+}
+
+function applyCMSData() {
+  if (!cmsData) return;
+  const data = cmsData;
+
+  // Hero
+  const greeting = document.querySelector('.hero-greeting');
+  if (greeting) greeting.textContent = data.hero.greeting;
+  
+  const title = document.querySelector('.hero-title');
+  if (title) title.textContent = data.hero.title;
+  
+  const subtitle = document.querySelector('.hero-subtitle');
+  if (subtitle) subtitle.textContent = data.hero.subtitle;
+  
+  const highlights = document.querySelector('.hero-highlights');
+  if (highlights) highlights.innerHTML = data.hero.highlights.map(h => `<span class="hero-highlight">${h}</span>`).join('');
+
+  // Typewriter
+  roles.length = 0;
+  roles.push(...data.hero.typed_text);
+
+  // About
+  const aboutIntro = document.querySelector('.about-intro');
+  if (aboutIntro) aboutIntro.innerHTML = `<p class="about-lead">${data.about.lead_html}</p>`;
+  
+  const aboutCards = document.querySelector('.about-cards');
+  if (aboutCards) aboutCards.innerHTML = data.about.cards.map(c => `
+    <div class="about-card">
+      <div class="about-card-icon"><i class="${c.icon}"></i></div>
+      <h4>${c.title}</h4>
+      <p>${c.description}</p>
+    </div>`).join('');
+    
+  const aboutStats = document.querySelector('.about-stats');
+  if (aboutStats) aboutStats.innerHTML = data.about.stats.map(s => `
+    <div class="stat-item">
+      <span class="stat-number">${s.number}</span>
+      <span class="stat-label">${s.label}</span>
+    </div>`).join('');
+
+  // Experience
+  const timeline = document.querySelector('.timeline');
+  if (timeline) timeline.innerHTML = data.experience.map(e => `
+    <div class="timeline-item reveal active">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">${e.date}</span>
+        <h3 class="timeline-title">${e.title}</h3>
+        <p class="timeline-subtitle">${e.subtitle}</p>
+        ${e.projects.map(p => `
+          <div class="experience-project">
+            <h4>${p.title}</h4>
+            <ul>
+              ${p.bullets.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  // Projects
+  const projectsGrid = document.querySelector('.projects-grid');
+  if (projectsGrid) projectsGrid.innerHTML = data.projects.map(p => `
+    <article class="project-card reveal active">
+      <div class="project-image">
+        <div class="project-image-placeholder">
+          <i class="${p.icon}"></i>
+        </div>
+      </div>
+      <div class="project-content">
+        <span class="project-label">${p.label}</span>
+        <h3 class="project-title">${p.title}</h3>
+        <p class="project-summary">${p.summary}</p>
+        <div class="project-details">
+          ${p.details.map(d => `
+            <div class="project-detail">
+              <h4>${d.heading}</h4>
+              <p>${d.text}</p>
+            </div>
+          `).join('')}
+        </div>
+        <div class="project-tags">
+          ${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
+        </div>
+      </div>
+    </article>
+  `).join('');
+
+  // Skills
+  const skillsGrid = document.querySelector('.skills-grid');
+  if (skillsGrid) skillsGrid.innerHTML = data.skills.map(s => `
+    <div class="skill-category reveal active">
+      <div class="skill-category-icon"><i class="${s.icon}"></i></div>
+      <h3>${s.title}</h3>
+      <div class="skills">
+        ${s.skills_list.map(sk => `<span class="skill-tag">${sk}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  // Education
+  const educationGrid = document.querySelector('.education-grid');
+  if (educationGrid) educationGrid.innerHTML = data.education.map(ed => `
+    <div class="education-card reveal active">
+      <div class="education-icon"><i class="${ed.icon}"></i></div>
+      <h3>${ed.title}</h3>
+      <p class="education-school">${ed.school}</p>
+      <p class="education-meta">${ed.meta}</p>
+      <div class="education-score">
+        <span class="score-badge">${ed.score}</span>
+      </div>
+    </div>
+  `).join('');
+
+  // Contact
+  const contactInfo = document.querySelector('.contact-info');
+  if (contactInfo) contactInfo.innerHTML = `
+    <p>I'm open to product management roles, fintech opportunities, and conversations where strong execution and structured product thinking matter.</p>
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+      <div>
+        <h4>Email</h4>
+        <a href="mailto:${data.contact.email}">${data.contact.email}</a>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fas fa-phone"></i></div>
+      <div>
+        <h4>Phone</h4>
+        <a href="tel:${data.contact.phone.replace(/\s+/g, '')}">${data.contact.phone}</a>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+      <div>
+        <h4>Location</h4>
+        <p>${data.contact.location}</p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+      <div>
+        <h4>LinkedIn</h4>
+        <a href="${data.contact.linkedin_url}" target="_blank" rel="noopener noreferrer">${data.contact.linkedin}</a>
+      </div>
+    </div>
+  `;
+
+  // Re-query reveal elements
+  window.revealElements = document.querySelectorAll('.reveal');
+}
+
+// Call fetch on load
+fetchCMSData();
+
 // Preloader
 const preloader = document.getElementById('preloader');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -10,7 +182,7 @@ window.addEventListener('load', () => {
 
 // Typewriter effect
 const typedElement = document.getElementById('typedText');
-const roles = ['FinTech Product Manager', '0-to-1 Product Builder', 'Platform Product Thinker', 'Business-to-Tech Translator'];
+let roles = ['FinTech Product Manager', '0-to-1 Product Builder', 'Platform Product Thinker', 'Business-to-Tech Translator'];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -179,12 +351,12 @@ function highlightNavLink() {
 window.addEventListener('scroll', highlightNavLink);
 
 // Scroll reveal
-const revealElements = document.querySelectorAll('.reveal');
+window.revealElements = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
   const windowHeight = window.innerHeight;
 
-  revealElements.forEach(el => {
+  window.revealElements.forEach(el => {
     if (el.getBoundingClientRect().top < windowHeight - 120) {
       el.classList.add('active');
     }
