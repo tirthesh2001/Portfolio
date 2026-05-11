@@ -419,6 +419,9 @@ a:hover {
 }
 
 .hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   animation: fadeInUp 0.8s ease-out 0.45s forwards;
   opacity: 0;
 }
@@ -489,7 +492,6 @@ a:hover {
   background: transparent;
   color: var(--text-primary);
   border: 2px solid var(--accent-primary);
-  margin-left: 1rem;
 }
 
 .btn-outline:hover {
