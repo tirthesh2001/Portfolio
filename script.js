@@ -182,7 +182,7 @@ window.addEventListener('load', () => {
 
 // Typewriter effect
 const typedElement = document.getElementById('typedText');
-let roles = ['FinTech Product Manager', '0-to-1 Product Builder', 'Platform Product Thinker', 'Business-to-Tech Translator'];
+let roles = ['Technical Product Manager', 'FinTech & Platform Products', '0-to-1 + Scale-up Delivery'];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

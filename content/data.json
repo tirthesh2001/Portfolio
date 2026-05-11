@@ -2,12 +2,12 @@
   "hero": {
     "greeting": "Hi, I'm",
     "title": "Tirthesh Patil",
-    "typed_text": ["Product Manager", "Problem Solver", "Platform Builder"],
-    "subtitle": "Product Manager with a technical foundation, focused on fintech and platform products. I turn business requirements into clear product direction, aligned teams, and shipped user experiences.",
+    "typed_text": ["Technical Product Manager", "FinTech & Platform Products", "0-to-1 + Scale-up Delivery"],
+    "subtitle": "Technical Product Manager with 2+ years of experience building and scaling fintech platforms across payments, AI, and data systems at Jio Financial Services. I own high-throughput systems handling 180K+ daily transactions and AI platforms serving 65K+ daily prompts.",
     "highlights": [
       "FinTech & Platform Products",
-      "0-to-1 + Scale-up Delivery",
-      "Business, UX, and Engineering Alignment"
+      "UPI / NPCI & RBI Regulations",
+      "API Integrations & System Design"
     ]
   },
   "about": {
@@ -51,41 +51,30 @@
       "subtitle": "Jio Platforms Limited • Navi Mumbai",
       "projects": [
         {
-          "title": "Little Nest (Children's Club Management App & Web Platform)",
+          "title": "JFS SuperApp • Little Nest",
           "bullets": [
-            "Led end-to-end delivery of the mobile and web experience covering bookings, class creation, and admin workflows.",
-            "Translated client and operational requirements into product scope, release priorities, and implementation-ready decisions.",
-            "Worked across stakeholders, design, and engineering to keep launches moving while balancing usability and execution constraints.",
-            "Supported post-launch operations, issue resolution, and iteration to improve the day-to-day booking experience.",
-            "Owned adoption conversations with client teams, helping turn a delivered platform into a usable operating workflow."
-          ]
-        },
-        {
-          "title": "Jio Financial Services (All-in-One Finance App)",
-          "bullets": [
-            "Owned parts of the UPI product lifecycle, aligning user experience, compliance requirements, and partner coordination.",
-            "Contributed to products spanning Account Aggregator capabilities and relationship management workflows.",
-            "Helped shape an AI-enabled financial marketplace experience across deposits, lending, cards, and related offerings.",
-            "Converted business and regulatory needs into clear requirements that engineering teams could execute with confidence.",
-            "Worked with internal teams and external partners to support integrations, launches, and product readiness.",
-            "Tracked product signals and KPIs to inform prioritization and iteration after release."
+            "Directed high-impact product strategy — balanced regulatory constraints, engineering bandwidth, and revenue goals across payments and AI verticals → delivered a cross-functional roadmap enabling 5+ successful product launches.",
+            "Owned the UPI payments vertical — drove NPCI compliance certification, multi-bank API integration, and real-time monitoring → scaled volume to 180K average daily transactions at 99%+ uptime and 85%+ payment success rate.",
+            "Defined the Consent Management compliance vertical — authored RBI-compliant AA specifications and managed fintech vendor integrations → delivered consolidated financial tracking to 10K+ monthly active users.",
+            "Spearheaded the analytics platform implementation — defined KPI frameworks for tracking transaction volume, adoption, and drop-off rates via Google Analytics → drove a 15%+ improvement in key user engagement metrics.",
+            "Led product initiatives for the AI-powered financial marketplace — defined requirements and managed third-party lender API integrations → generated a ~20% cross-sell revenue uplift post-launch."
           ]
         }
       ]
     },
     {
-      "date": "Dec 2023 — Dec 2024",
-      "title": "Team Lead — Assistant Product Manager",
+      "date": "Dec 2023 — Nov 2024",
+      "title": "Team Lead & Associate Product Manager",
       "subtitle": "Jio Platforms Limited • Navi Mumbai",
       "projects": [
         {
-          "title": "Govt. Engagements, Asset Mgmt, AI Chatbots",
+          "title": "Government Engagements • Asset Management System • AI Chatbot Solutions",
           "bullets": [
-            "Drove user story reviews and backlog refinement so teams could move from discussion to execution with less ambiguity.",
-            "Balanced scope, timelines, and stakeholder expectations across multiple initiatives running in parallel.",
-            "Coordinated testing, operations, and delivery readiness to support smoother releases.",
-            "Facilitated agile ceremonies and team rituals that improved alignment across business and engineering stakeholders.",
-            "Built context across government, asset management, and AI-focused use cases, adapting product thinking to each domain."
+            "Owned the JFS Agentic Chatbot — executed an iterative roadmap and maintained executive stakeholder alignment → scaled platform usage to 65K daily prompts within the JFS SuperApp.",
+            "Led the 0-to-1 build of the Little Nest platform — drove the full ideation-to-launch cycle alongside senior enterprise stakeholders → achieved a 75%+ reduction in manual operations with 500+ automated daily transactions.",
+            "Managed execution across a 60+ member cross-functional team — facilitated agile ceremonies and streamlined operational workflows → drove a ~50% improvement in team velocity across concurrent tracks.",
+            "Delivered a RAG-based multilingual AI chatbot — led requirement documentation reviews and coordinated rigorous QA cycles → scaled product to 10K daily active users across 12 languages.",
+            "Optimized product delivery pipelines — conducted rigorous backlog refinement and cross-track sprint planning → reduced development rework by ~20% while keeping releases tightly aligned to business goals."
           ]
         }
       ]
@@ -98,9 +87,7 @@
         {
           "title": "Frontend Web Development",
           "bullets": [
-            "Built responsive front-end experiences with a strong focus on usability and client requirements.",
-            "Worked directly with stakeholders to understand expectations and convert them into deliverables.",
-            "Supported launch communication through PR emailers and campaign assets."
+            "Spearheaded frontend web development using the MERN stack — collaborated with clients to translate business requirements into technical architectures → shipped 5+ cross-browser-compatible product features with zero major post-launch defects."
           ]
         }
       ]
@@ -173,21 +160,31 @@
   ],
   "skills": [
     {
-      "icon": "fas fa-diagram-project",
-      "title": "Product & Technical",
+      "icon": "fas fa-bullseye",
+      "title": "Product & Strategy",
       "skills_list": [
-        "PRD", "User Stories", "Figma / Wireframing", "Prototyping", "PoC",
-        "Project Planning", "KPIs", "SQL", "Postman", "MS Excel",
-        "Google Analytics", "MERN Stack"
+        "Product Strategy", "Roadmapping", "KPI Design & Tracking", "Data-Driven Decision Making", "Stakeholder Management", "Cross-functional Leadership"
       ]
     },
     {
-      "icon": "fas fa-briefcase",
-      "title": "Business",
+      "icon": "fas fa-database",
+      "title": "Systems & Data",
       "skills_list": [
-        "Market Research", "Strategic Thinking", "Stakeholder Management",
-        "Compliance (FinTech)", "Financial Acumen", "Product Lifecycle Mgmt",
-        "Data-Driven Decisions"
+        "API Design & Integration", "System Design", "Scalability & Performance", "Data Instrumentation", "SQL", "Funnel Analysis"
+      ]
+    },
+    {
+      "icon": "fas fa-landmark",
+      "title": "Domain Expertise",
+      "skills_list": [
+        "UPI / NPCI", "RBI Regulations", "Account Aggregator (AA)", "Consent Management", "FinTech Platform Architecture"
+      ]
+    },
+    {
+      "icon": "fas fa-robot",
+      "title": "AI & Tools",
+      "skills_list": [
+        "RAG Systems", "Agentic Workflows", "Prompt Engineering", "AI Product Integration", "JIRA", "Postman", "Google Analytics"
       ]
     }
   ],
