@@ -53,11 +53,11 @@
         {
           "title": "JFS SuperApp • Little Nest",
           "bullets": [
-            "Directed high-impact product strategy — balanced regulatory constraints, engineering bandwidth, and revenue goals across payments and AI verticals → delivered a cross-functional roadmap enabling 5+ successful product launches.",
-            "Owned the UPI payments vertical — drove NPCI compliance certification, multi-bank API integration, and real-time monitoring → scaled volume to 180K average daily transactions at 99%+ uptime and 85%+ payment success rate.",
-            "Defined the Consent Management compliance vertical — authored RBI-compliant AA specifications and managed fintech vendor integrations → delivered consolidated financial tracking to 10K+ monthly active users.",
-            "Spearheaded the analytics platform implementation — defined KPI frameworks for tracking transaction volume, adoption, and drop-off rates via Google Analytics → drove a 15%+ improvement in key user engagement metrics.",
-            "Led product initiatives for the AI-powered financial marketplace — defined requirements and managed third-party lender API integrations → generated a ~20% cross-sell revenue uplift post-launch."
+            "Prioritized high-impact product initiatives across payments, AI, and marketplace verticals, balancing regulatory constraints, engineering bandwidth, and revenue goals.",
+            "Owned and scaled the UPI payments vertical — drove NPCI compliance certification, multi-bank API integration, and real-time monitoring → scaled volume to 180K average daily transactions at 99%+ uptime with 85%+ successful payment processing.",
+            "Defined the Consent Management compliance vertical — authored RBI-compliant AA data-sharing specifications and drove fintech vendor integration → delivered consolidated financial views to thousands of users monthly.",
+            "Drove the analytics platform implementation (Google Analytics + internal dashboards) — defined KPI frameworks tracking transaction volume, adoption, and drop-off rates → drove double-digit improvements in key engagement metrics.",
+            "Led key product initiatives for the AI-powered financial marketplace (FDs, loans, credit cards, gold) — defined product requirements and led third-party lender API integration → generated ~20% cross-sell revenue uplift post-launch."
           ]
         }
       ]
@@ -70,11 +70,11 @@
         {
           "title": "Government Engagements • Asset Management System • AI Chatbot Solutions",
           "bullets": [
-            "Owned the JFS Agentic Chatbot — executed an iterative roadmap and maintained executive stakeholder alignment → scaled platform usage to 65K daily prompts within the JFS SuperApp.",
-            "Led the 0-to-1 build of the Little Nest platform — drove the full ideation-to-launch cycle alongside senior enterprise stakeholders → achieved a 75%+ reduction in manual operations with 500+ automated daily transactions.",
-            "Managed execution across a 60+ member cross-functional team — facilitated agile ceremonies and streamlined operational workflows → drove a ~50% improvement in team velocity across concurrent tracks.",
-            "Delivered a RAG-based multilingual AI chatbot — led requirement documentation reviews and coordinated rigorous QA cycles → scaled product to 10K daily active users across 12 languages.",
-            "Optimized product delivery pipelines — conducted rigorous backlog refinement and cross-track sprint planning → reduced development rework by ~20% while keeping releases tightly aligned to business goals."
+            "Owned the JFS Agentic Chatbot — led iterative roadmap execution and executive stakeholder alignment → scaled usage to 65K prompts daily within the JFS App.",
+            "Led 0 to 1 build of the Little Nest platform (mobile + web) — drove full ideation-to-launch cycle with senior enterprise stakeholders → achieved a 75%+ reduction in manual operations with hundreds of automated daily transactions.",
+            "Scaled execution across a 60+ member cross-functional team spanning QA and operations — facilitated agile ceremonies and streamlined workflows → drove a ~50% improvement in team velocity across concurrent product tracks.",
+            "Delivered the RAG-based multilingual AI chatbot for a government initiative — led requirement documentation reviews and coordinated QA cycles → scaled product to 10K DAU across 12 languages.",
+            "Improved product delivery efficiency through backlog refinement and sprint planning across multiple enterprise tracks — improved requirement clarity and feasibility → reduced development rework by ~20% while keeping delivery tightly aligned to business goals."
           ]
         }
       ]
@@ -87,7 +87,7 @@
         {
           "title": "Frontend Web Development",
           "bullets": [
-            "Spearheaded frontend web development using the MERN stack — collaborated with clients to translate business requirements into technical architectures → shipped 5+ cross-browser-compatible product features with zero major post-launch defects."
+            "Leveraged MERN stack expertise to improve technical feasibility discussions and reduce engineering iteration cycles — collaborated directly with clients to translate requirements → shipped cross-browser-compatible product features."
           ]
         }
       ]

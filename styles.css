@@ -466,38 +466,38 @@ a:hover {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.65rem 1.25rem;
   border-radius: var(--border-radius);
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
   transition: all var(--transition-medium);
   cursor: pointer;
   font-family: inherit;
 }
 
 .btn-primary {
-  background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
-  color: white;
-  border: none;
-  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+  background: rgba(249, 115, 22, 0.15);
+  color: var(--accent-primary);
+  border: 1px solid rgba(249, 115, 22, 0.3);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.5);
+  transform: translateY(-2px);
+  background: var(--accent-primary);
   color: white;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--text-primary);
-  border: 2px solid var(--accent-primary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-outline:hover {
-  background-color: var(--accent-primary);
-  color: white;
-  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
 }
 
 /* Section styling */
