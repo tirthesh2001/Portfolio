@@ -117,24 +117,45 @@
     },
     {
       "label": "Product Case Study",
-      "title": "Financial Marketplace & Payments Experience",
-      "icon": "fas fa-building-columns",
-      "summary": "A connected fintech product space spanning UPI, partner integrations, and marketplace journeys across financial products.",
+      "title": "UPI Payments Scalability at JFS",
+      "icon": "fas fa-money-bill-transfer",
+      "summary": "Scaling the UPI payments vertical within the Jio Financial Services ecosystem to handle high-throughput transactions reliably.",
       "details": [
         {
-          "heading": "The Problem",
-          "text": "Fintech products needed to balance compliance, partner dependencies, and a user experience simple enough to drive adoption."
+          "heading": "The Context",
+          "text": "The payments system needed to support massive daily transaction volumes while strictly adhering to NPCI compliance and maintaining high uptime."
         },
         {
           "heading": "What I Drove",
-          "text": "Cross-functional coordination, product requirement definition, integration readiness, and KPI-aware iteration."
+          "text": "Owned the UPI payments vertical, driving NPCI compliance certification, multi-bank API integration, and implementing real-time monitoring."
         },
         {
           "heading": "Outcome",
-          "text": "Delivery moved forward with clearer requirements, stronger execution alignment, and a better foundation for scale and optimization."
+          "text": "Scaled volume to 180K average daily transactions at 99%+ uptime with an 85%+ successful payment processing rate."
         }
       ],
-      "tags": ["FinTech", "UPI", "Compliance", "Partner Integrations"]
+      "tags": ["UPI / NPCI", "API Integration", "High Throughput", "Compliance"]
+    },
+    {
+      "label": "Product Case Study",
+      "title": "Agentic Chatbot for JFS SuperApp",
+      "icon": "fas fa-robot",
+      "summary": "An intelligent, AI-powered agentic chatbot integrated into the JFS SuperApp to handle complex workflows and user queries.",
+      "details": [
+        {
+          "heading": "The Context",
+          "text": "Users needed a seamless, conversational interface within the app to navigate services, requiring sophisticated AI workflow integrations."
+        },
+        {
+          "heading": "What I Drove",
+          "text": "Owned the JFS Agentic Chatbot product lifecycle, leading iterative roadmap execution and ensuring executive stakeholder alignment."
+        },
+        {
+          "heading": "Outcome",
+          "text": "Successfully scaled usage to 65,000 daily prompts within the JFS App, driving significant conversational engagement."
+        }
+      ],
+      "tags": ["AI / GenAI", "Agentic Workflows", "Product Strategy", "Scale-up"]
     },
     {
       "label": "Technical Project",
