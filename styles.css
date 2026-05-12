@@ -911,6 +911,63 @@ section:nth-of-type(even) {
   text-align: center;
 }
 
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: calc(50% - 1rem); /* adjust for padding-bottom */
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: all var(--transition-medium);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carousel-wrapper:hover .carousel-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carousel-arrow:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-arrow {
+  left: -24px;
+}
+
+.next-arrow {
+  right: -24px;
+}
+
+@media (max-width: 1240px) {
+  .prev-arrow { left: 10px; }
+  .next-arrow { right: 10px; }
+}
+
+@media (max-width: 768px) {
+  .carousel-arrow {
+    display: none; /* Hide on mobile where swiping is natural */
+  }
+}
+
 .projects-grid {
   display: flex;
   overflow-x: auto;

@@ -445,3 +445,23 @@ contactForm.addEventListener('submit', async (e) => {
     }, 6000);
   }
 });
+
+// Projects Carousel Navigation
+const projectsGrid = document.getElementById('projectsGrid');
+const scrollPrevBtn = document.getElementById('scrollPrev');
+const scrollNextBtn = document.getElementById('scrollNext');
+
+if (projectsGrid && scrollPrevBtn && scrollNextBtn) {
+  const getScrollAmount = () => {
+    const card = projectsGrid.querySelector('.project-card');
+    return card ? card.offsetWidth + 32 : 400; // 32px is 2rem gap
+  };
+
+  scrollPrevBtn.addEventListener('click', () => {
+    projectsGrid.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+  });
+
+  scrollNextBtn.addEventListener('click', () => {
+    projectsGrid.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+  });
+}
