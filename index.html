@@ -10,14 +10,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Tirthesh Patil — Product Manager" />
   <meta property="og:description" content="Product Manager focused on fintech, platform delivery, and cross-functional execution across product strategy, requirements, and go-to-market." />
-  <meta property="og:image" content="Assets/myself.jpeg" />
-  <meta property="og:url" content="https://tirtheshpatil.com" />
+  <meta property="og:image" content="https://tirtheshpatil.vercel.app/Assets/myself.jpeg" />
+  <meta property="og:url" content="https://tirtheshpatil.vercel.app" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Tirthesh Patil — Product Manager" />
   <meta name="twitter:description" content="Product Manager focused on fintech, platform delivery, and turning ambiguity into shipped products." />
-  <meta name="twitter:image" content="Assets/myself.jpeg" />
+  <meta name="twitter:image" content="https://tirtheshpatil.vercel.app/Assets/myself.jpeg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -317,10 +317,12 @@
   </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills & Edge Section -->
   <section id="skills">
     <div class="container">
-      <h2 class="section-title reveal">Skills &amp; Expertise</h2>
+      <div id="edgeContainer"></div>
+      
+      <h2 class="section-title reveal" style="margin-top: 4rem;">Skills &amp; Expertise</h2>
       <div class="skills-grid">
         <div class="skill-category reveal">
           <div class="skill-category-icon"><i class="fas fa-diagram-project"></i></div>
@@ -479,6 +481,14 @@
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </button>
+
+  <!-- Deep Dive Modal -->
+  <dialog id="deepDiveModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModalBtn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-body" id="deepDiveBody"></div>
+    </div>
+  </dialog>
 
   <script src="script.js"></script>
 </body>

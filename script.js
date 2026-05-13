@@ -56,7 +56,8 @@ function applyCMSData() {
 
   // Experience
   const timeline = document.querySelector('.timeline');
-  if (timeline) timeline.innerHTML = data.experience.map(e => `
+  if (timeline) {
+    const timelineHTML = data.experience.map(e => `
     <div class="timeline-item reveal active">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
@@ -74,18 +75,20 @@ function applyCMSData() {
       </div>
     </div>
   `).join('');
+    timeline.innerHTML = '<div class="timeline-progress" id="timelineProgress"></div>' + timelineHTML;
+  }
 
   // Projects
   const projectsGrid = document.querySelector('.projects-grid');
   if (projectsGrid) projectsGrid.innerHTML = data.projects.map(p => `
-    <article class="project-card reveal active">
+    <article class="project-card reveal active" ${p.hasDeepDive ? `style="cursor: pointer;" onclick="openDeepDive('${p.deepDiveId}')"` : ''}>
       <div class="project-image">
         <div class="project-image-placeholder">
           <i class="${p.icon}"></i>
         </div>
       </div>
       <div class="project-content">
-        <span class="project-label">${p.label}</span>
+        <span class="project-label">${p.label} ${p.hasDeepDive ? '&bull; <i class="fas fa-expand"></i> Deep Dive' : ''}</span>
         <h3 class="project-title">${p.title}</h3>
         <p class="project-summary">${p.summary}</p>
         <div class="project-details">
@@ -102,6 +105,24 @@ function applyCMSData() {
       </div>
     </article>
   `).join('');
+
+  // Edge
+  const edgeContainer = document.getElementById('edgeContainer');
+  if (edgeContainer && data.edge) {
+    edgeContainer.innerHTML = `
+      <div class="edge-content reveal active">
+        <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);">${data.edge.title}</h3>
+        <div class="edge-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+          ${data.edge.items.map(i => `
+            <div class="edge-card" style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: var(--border-radius); border: 1px solid rgba(255,255,255,0.05);">
+              <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem;">${i.heading}</h4>
+              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">${i.text}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
 
   // Skills
   const skillsGrid = document.querySelector('.skills-grid');
@@ -402,11 +423,8 @@ contactForm.addEventListener('submit', async (e) => {
   const accessKey = contactForm.querySelector('input[name="access_key"]').value;
 
   if (!accessKey || accessKey === 'YOUR_ACCESS_KEY') {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    const mailto = `mailto:tirthesh18@gmail.com?subject=${encodeURIComponent('Portfolio Contact from ' + name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-    window.location.href = mailto;
+    formStatus.className = 'form-status error';
+    formStatus.textContent = 'Form submission is currently unavailable. Please email me directly at tirthesh18@gmail.com.';
     return;
   }
 
@@ -484,5 +502,34 @@ if (experienceTimeline && timelineProgress) {
     percentage = Math.max(0, Math.min(100, percentage));
     
     timelineProgress.style.height = `${percentage}%`;
+  });
+}
+
+// Deep Dive Modal Logic
+const deepDiveModal = document.getElementById('deepDiveModal');
+const deepDiveBody = document.getElementById('deepDiveBody');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+window.openDeepDive = function(id) {
+  if (cmsData && cmsData.deepDives && cmsData.deepDives[id]) {
+    deepDiveBody.innerHTML = cmsData.deepDives[id];
+    deepDiveModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+if (closeModalBtn) {
+  closeModalBtn.addEventListener('click', () => {
+    deepDiveModal.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+}
+
+if (deepDiveModal) {
+  deepDiveModal.addEventListener('click', (e) => {
+    if (e.target === deepDiveModal) {
+      deepDiveModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
   });
 }

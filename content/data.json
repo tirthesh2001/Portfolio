@@ -103,16 +103,24 @@
       "summary": "A mobile and web platform for managing classes, bookings, and admin workflows for a children's club business.",
       "details": [
         {
-          "heading": "The Problem",
-          "text": "Operations needed one reliable system for class creation, slot management, bookings, and day-to-day administration."
+          "heading": "Context",
+          "text": "Operations required a centralized system for class creation, slot management, bookings, and administration."
         },
         {
-          "heading": "What I Drove",
-          "text": "Requirement shaping, stakeholder coordination, prioritization, launch planning, and post-release iteration."
+          "heading": "Constraint",
+          "text": "Legacy workflows were deeply entrenched; the new platform had to be intuitive enough to require zero training."
         },
         {
-          "heading": "Outcome",
-          "text": "A more structured operating workflow that supported adoption, issue resolution, and smoother customer-facing booking journeys."
+          "heading": "Decision",
+          "text": "Focused on a unified mobile+web approach, prioritizing the instructor and admin dashboards first."
+        },
+        {
+          "heading": "Metric Impact",
+          "text": "Streamlined booking journeys and reduced operational overhead by centralizing fragmented tools."
+        },
+        {
+          "heading": "What I Owned",
+          "text": "Requirement shaping, stakeholder coordination, launch planning, and post-release iteration."
         }
       ],
       "tags": [
@@ -129,18 +137,28 @@
       "summary": "Scaling the UPI payments vertical within the Jio Financial Services ecosystem to handle high-throughput transactions reliably.",
       "details": [
         {
-          "heading": "The Context",
-          "text": "The payments system needed to support massive daily transaction volumes while strictly adhering to NPCI compliance and maintaining high uptime."
+          "heading": "Context",
+          "text": "JFS needed a highly scalable UPI payments vertical to handle massive daily transaction volumes."
         },
         {
-          "heading": "What I Drove",
-          "text": "Owned the UPI payments vertical, driving NPCI compliance certification, multi-bank API integration, and implementing real-time monitoring."
+          "heading": "Constraint",
+          "text": "Strict adherence to NPCI compliance, multi-bank API disparities, and demanding uptime requirements."
         },
         {
-          "heading": "Outcome",
-          "text": "Scaled volume to 180K average daily transactions at 99%+ uptime with an 85%+ successful payment processing rate."
+          "heading": "Decision",
+          "text": "Implemented a unified API integration strategy with robust fallback mechanisms to ensure high availability."
+        },
+        {
+          "heading": "Metric Impact",
+          "text": "Scaled to 180K average daily transactions, maintaining 99%+ uptime and an 85%+ successful processing rate."
+        },
+        {
+          "heading": "What I Owned",
+          "text": "End-to-end UPI roadmap, NPCI certification, API integration, and real-time monitoring rollout."
         }
       ],
+      "hasDeepDive": true,
+      "deepDiveId": "upi",
       "tags": [
         "UPI / NPCI",
         "API Integration",
@@ -155,18 +173,28 @@
       "summary": "An intelligent, AI-powered agentic chatbot integrated into the JFS SuperApp to handle complex workflows and user queries.",
       "details": [
         {
-          "heading": "The Context",
-          "text": "Users needed a seamless, conversational interface within the app to navigate services, requiring sophisticated AI workflow integrations."
+          "heading": "Context",
+          "text": "Users needed a seamless, conversational interface within the JFS SuperApp to navigate complex financial services."
         },
         {
-          "heading": "What I Drove",
-          "text": "Owned the JFS Agentic Chatbot product lifecycle, leading iterative roadmap execution and ensuring executive stakeholder alignment."
+          "heading": "Constraint",
+          "text": "Integrating sophisticated AI/GenAI models while ensuring financial data privacy and minimizing hallucination risks."
         },
         {
-          "heading": "Outcome",
-          "text": "Successfully scaled usage to 65,000 daily prompts within the JFS App, driving significant conversational engagement."
+          "heading": "Decision",
+          "text": "Adopted an agentic workflow architecture that tightly controls AI actions within secure bounds."
+        },
+        {
+          "heading": "Metric Impact",
+          "text": "Successfully scaled usage to 65,000 daily prompts, significantly driving conversational engagement."
+        },
+        {
+          "heading": "What I Owned",
+          "text": "The Agentic Chatbot product lifecycle, iterative roadmap execution, and executive stakeholder alignment."
         }
       ],
+      "hasDeepDive": true,
+      "deepDiveId": "chatbot",
       "tags": [
         "AI / GenAI",
         "Agentic Workflows",
@@ -200,53 +228,49 @@
       ]
     }
   ],
+  "edge": {
+    "title": "Why me for PM roles?",
+    "items": [
+      {
+        "heading": "FinTech Domain Depth",
+        "text": "Deep expertise navigating NPCI, UPI, Account Aggregator, and RBI compliance frameworks."
+      },
+      {
+        "heading": "Engineering Fluency",
+        "text": "Able to unblock engineering, discuss API architectures, and write technical PRDs."
+      },
+      {
+        "heading": "Execution in Ambiguity",
+        "text": "Proven track record of taking 0-to-1 ideas and turning them into shipped, scalable products."
+      }
+    ]
+  },
   "skills": [
     {
       "icon": "fas fa-bullseye",
-      "title": "Product & Strategy",
+      "title": "Product",
       "skills_list": [
         "Product Strategy",
-        "Roadmapping",
-        "KPI Design & Tracking",
-        "Data-Driven Decision Making",
-        "Stakeholder Management",
-        "Cross-functional Leadership"
+        "KPI & Analytics",
+        "Execution & Roadmapping"
       ]
     },
     {
-      "icon": "fas fa-database",
-      "title": "Systems & Data",
+      "icon": "fas fa-code-branch",
+      "title": "Technical & AI",
       "skills_list": [
-        "API Design & Integration",
-        "System Design",
-        "Scalability & Performance",
-        "Data Instrumentation",
-        "SQL",
-        "Funnel Analysis"
+        "API Integration",
+        "Agentic Workflows",
+        "System Design"
       ]
     },
     {
       "icon": "fas fa-landmark",
-      "title": "Domain Expertise",
+      "title": "Domain",
       "skills_list": [
+        "FinTech Architecture",
         "UPI / NPCI",
-        "RBI Regulations",
-        "Account Aggregator (AA)",
-        "Consent Management",
-        "FinTech Platform Architecture"
-      ]
-    },
-    {
-      "icon": "fas fa-robot",
-      "title": "AI & Tools",
-      "skills_list": [
-        "RAG Systems",
-        "Agentic Workflows",
-        "Prompt Engineering",
-        "AI Product Integration",
-        "JIRA",
-        "Postman",
-        "Google Analytics"
+        "Compliance"
       ]
     }
   ],
@@ -272,5 +296,9 @@
     "location": "Navi Mumbai, Maharashtra",
     "linkedin": "linkedin.com/in/tirthesh-patil",
     "linkedin_url": "https://in.linkedin.com/in/tirthesh-patil"
+  },
+  "deepDives": {
+    "upi": "<h3>UPI Payments Scalability</h3><p><em>This is a placeholder for the deep-dive case study. Here you can document your Problem Discovery, Technical Constraints, Solution Architecture, and key learnings.</em></p>",
+    "chatbot": "<h3>Agentic Chatbot</h3><p><em>This is a placeholder for the deep-dive case study. Here you can document your Problem Discovery, Technical Constraints, Solution Architecture, and key learnings.</em></p>"
   }
 }
