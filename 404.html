@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 Not Found — Tirthesh Patil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="Assets/firey_duck.ico" />
+  <style>
+    .not-found-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    .error-message {
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin-bottom: 2rem;
+    }
+    
+    .error-description {
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar-content">
+      <a href="index.html" class="logo"><img src="Assets/firey_duck.png" alt="Tirthesh Patil" class="logo-img" /><span class="logo-text">Tirthesh</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 404 Content -->
+  <main class="not-found-container">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-message">Page Not Found</h2>
+    <p class="error-description">The page you are looking for doesn't exist or has been moved. Let's get you back to the home page.</p>
+    <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left" style="margin-right: 0.5rem;"></i> Back to Home</a>
+  </main>
+
+</body>
+</html>

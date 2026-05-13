@@ -1203,18 +1203,13 @@ section:nth-of-type(even) {
 }
 
 .form-group {
+  position: relative;
   margin-bottom: 1.5rem;
 }
 
-.form-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.form-control {
+.floating-input {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 1rem 0.5rem;
   background-color: var(--bg-primary);
   border: 1px solid #444;
   border-radius: var(--border-radius);
@@ -1224,13 +1219,31 @@ section:nth-of-type(even) {
   transition: all var(--transition-fast);
 }
 
-.form-control:focus {
+.floating-label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  transform-origin: left top;
+}
+
+.floating-input:focus {
   outline: none;
   border-color: var(--accent-primary);
   box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
 }
 
-textarea.form-control {
+.floating-input:focus ~ .floating-label,
+.floating-input:not(:placeholder-shown) ~ .floating-label {
+  top: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--accent-primary);
+}
+
+textarea.floating-input {
   min-height: 150px;
   resize: vertical;
 }
