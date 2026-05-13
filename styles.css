@@ -690,13 +690,16 @@ section:nth-of-type(even) {
 }
 
 .skill-tag {
-  background-color: rgba(249, 115, 22, 0.1);
-  color: var(--accent-primary);
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  font-size: 0.875rem;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transition: all var(--transition-fast);
-  border: 1px solid rgba(249, 115, 22, 0.15);
 }
 
 .skill-tag:hover {
@@ -708,39 +711,42 @@ section:nth-of-type(even) {
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
 }
 
 .skill-category {
   background-color: var(--card-bg);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
   transition: all var(--transition-medium);
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .skill-category-icon {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(239, 68, 68, 0.15));
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(239, 68, 68, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--accent-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .skill-category h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-primary);
 }
 
 /* Education */
@@ -1033,7 +1039,7 @@ section:nth-of-type(even) {
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--card-shadow);
-  flex: 0 0 380px;
+  flex: 0 0 340px;
   scroll-snap-align: start;
   transition: all var(--transition-medium);
 }
@@ -1045,7 +1051,7 @@ section:nth-of-type(even) {
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 120px;
   overflow: hidden;
 }
 
@@ -1077,7 +1083,7 @@ section:nth-of-type(even) {
 }
 
 .project-content {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .project-label {
@@ -1096,7 +1102,8 @@ section:nth-of-type(even) {
 }
 
 .project-summary {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .project-details {
@@ -1927,8 +1934,19 @@ footer {
   color: var(--accent-primary);
 }
 
+.modal-body h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-bottom: 0.4rem;
+  margin-top: 0.5rem;
+}
+
 .modal-body p {
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1rem;
+  font-size: 0.95rem;
 }

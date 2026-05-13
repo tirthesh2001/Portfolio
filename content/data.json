@@ -103,26 +103,12 @@
       "summary": "A mobile and web platform for managing classes, bookings, and admin workflows for a children's club business.",
       "details": [
         {
-          "heading": "Context",
-          "text": "Operations required a centralized system for class creation, slot management, bookings, and administration."
-        },
-        {
-          "heading": "Constraint",
-          "text": "Legacy workflows were deeply entrenched; the new platform had to be intuitive enough to require zero training."
-        },
-        {
-          "heading": "Decision",
-          "text": "Focused on a unified mobile+web approach, prioritizing the instructor and admin dashboards first."
-        },
-        {
-          "heading": "Metric Impact",
+          "heading": "Impact",
           "text": "Streamlined booking journeys and reduced operational overhead by centralizing fragmented tools."
-        },
-        {
-          "heading": "What I Owned",
-          "text": "Requirement shaping, stakeholder coordination, launch planning, and post-release iteration."
         }
       ],
+      "hasDeepDive": true,
+      "deepDiveId": "littlenest",
       "tags": [
         "0-to-1 Delivery",
         "Mobile + Web",
@@ -137,24 +123,8 @@
       "summary": "Scaling the UPI payments vertical within the Jio Financial Services ecosystem to handle high-throughput transactions reliably.",
       "details": [
         {
-          "heading": "Context",
-          "text": "JFS needed a highly scalable UPI payments vertical to handle massive daily transaction volumes."
-        },
-        {
-          "heading": "Constraint",
-          "text": "Strict adherence to NPCI compliance, multi-bank API disparities, and demanding uptime requirements."
-        },
-        {
-          "heading": "Decision",
-          "text": "Implemented a unified API integration strategy with robust fallback mechanisms to ensure high availability."
-        },
-        {
-          "heading": "Metric Impact",
+          "heading": "Impact",
           "text": "Scaled to 180K average daily transactions, maintaining 99%+ uptime and an 85%+ successful processing rate."
-        },
-        {
-          "heading": "What I Owned",
-          "text": "End-to-end UPI roadmap, NPCI certification, API integration, and real-time monitoring rollout."
         }
       ],
       "hasDeepDive": true,
@@ -173,24 +143,8 @@
       "summary": "An intelligent, AI-powered agentic chatbot integrated into the JFS SuperApp to handle complex workflows and user queries.",
       "details": [
         {
-          "heading": "Context",
-          "text": "Users needed a seamless, conversational interface within the JFS SuperApp to navigate complex financial services."
-        },
-        {
-          "heading": "Constraint",
-          "text": "Integrating sophisticated AI/GenAI models while ensuring financial data privacy and minimizing hallucination risks."
-        },
-        {
-          "heading": "Decision",
-          "text": "Adopted an agentic workflow architecture that tightly controls AI actions within secure bounds."
-        },
-        {
-          "heading": "Metric Impact",
+          "heading": "Impact",
           "text": "Successfully scaled usage to 65,000 daily prompts, significantly driving conversational engagement."
-        },
-        {
-          "heading": "What I Owned",
-          "text": "The Agentic Chatbot product lifecycle, iterative roadmap execution, and executive stakeholder alignment."
         }
       ],
       "hasDeepDive": true,
@@ -209,16 +163,8 @@
       "summary": "A product concept built around real-time slot visibility, booking flows, and admin-side management.",
       "details": [
         {
-          "heading": "The Problem",
-          "text": "Users and operators needed better visibility into parking availability and fewer manual coordination steps."
-        },
-        {
-          "heading": "What I Built",
-          "text": "A mobile app plus web dashboard experience covering slot discovery, bookings, and operational control."
-        },
-        {
-          "heading": "Why It Matters",
-          "text": "It reflects my technical grounding and ability to think through both customer-side and admin-side workflows."
+          "heading": "Impact",
+          "text": "Delivered a mobile app and web dashboard for seamless slot discovery, bookings, and operational control."
         }
       ],
       "tags": [
@@ -248,29 +194,50 @@
   "skills": [
     {
       "icon": "fas fa-bullseye",
-      "title": "Product",
+      "title": "Product & Strategy",
       "skills_list": [
         "Product Strategy",
-        "KPI & Analytics",
-        "Execution & Roadmapping"
+        "Roadmapping",
+        "KPI Design & Tracking",
+        "Data-Driven Decision Making",
+        "Stakeholder Management",
+        "Cross-functional Leadership"
       ]
     },
     {
-      "icon": "fas fa-code-branch",
-      "title": "Technical & AI",
+      "icon": "fas fa-database",
+      "title": "Systems & Data",
       "skills_list": [
-        "API Integration",
-        "Agentic Workflows",
-        "System Design"
+        "API Design & Integration",
+        "System Design",
+        "Scalability & Performance",
+        "Data Instrumentation",
+        "SQL",
+        "Funnel Analysis"
       ]
     },
     {
       "icon": "fas fa-landmark",
-      "title": "Domain",
+      "title": "Domain Expertise",
       "skills_list": [
-        "FinTech Architecture",
         "UPI / NPCI",
-        "Compliance"
+        "RBI Regulations",
+        "Account Aggregator (AA)",
+        "Consent Management",
+        "FinTech Platform Architecture"
+      ]
+    },
+    {
+      "icon": "fas fa-robot",
+      "title": "AI & Tools",
+      "skills_list": [
+        "RAG Systems",
+        "Agentic Workflows",
+        "Prompt Engineering",
+        "AI Product Integration",
+        "JIRA",
+        "Postman",
+        "Google Analytics"
       ]
     }
   ],
@@ -298,7 +265,8 @@
     "linkedin_url": "https://in.linkedin.com/in/tirthesh-patil"
   },
   "deepDives": {
-    "upi": "<h3>UPI Payments Scalability</h3><p><em>This is a placeholder for the deep-dive case study. Here you can document your Problem Discovery, Technical Constraints, Solution Architecture, and key learnings.</em></p>",
-    "chatbot": "<h3>Agentic Chatbot</h3><p><em>This is a placeholder for the deep-dive case study. Here you can document your Problem Discovery, Technical Constraints, Solution Architecture, and key learnings.</em></p>"
+    "upi": "<h3>UPI Payments Scalability</h3><br/><h4>Context</h4><p>JFS needed a highly scalable UPI payments vertical to handle massive daily transaction volumes.</p><br/><h4>Constraint</h4><p>Strict adherence to NPCI compliance, multi-bank API disparities, and demanding uptime requirements.</p><br/><h4>Decision</h4><p>Implemented a unified API integration strategy with robust fallback mechanisms to ensure high availability.</p><br/><h4>Metric Impact</h4><p>Scaled to 180K average daily transactions, maintaining 99%+ uptime and an 85%+ successful processing rate.</p><br/><h4>What I Owned</h4><p>End-to-end UPI roadmap, NPCI certification, API integration, and real-time monitoring rollout.</p>",
+    "chatbot": "<h3>Agentic Chatbot for JFS</h3><br/><h4>Context</h4><p>Users needed a seamless, conversational interface within the JFS SuperApp to navigate complex financial services.</p><br/><h4>Constraint</h4><p>Integrating sophisticated AI/GenAI models while ensuring financial data privacy and minimizing hallucination risks.</p><br/><h4>Decision</h4><p>Adopted an agentic workflow architecture that tightly controls AI actions within secure bounds.</p><br/><h4>Metric Impact</h4><p>Successfully scaled usage to 65,000 daily prompts, significantly driving conversational engagement.</p><br/><h4>What I Owned</h4><p>The Agentic Chatbot product lifecycle, iterative roadmap execution, and executive stakeholder alignment.</p>",
+    "littlenest": "<h3>Little Nest Club Management Platform</h3><br/><h4>Context</h4><p>Operations required a centralized system for class creation, slot management, bookings, and administration.</p><br/><h4>Constraint</h4><p>Legacy workflows were deeply entrenched; the new platform had to be intuitive enough to require zero training.</p><br/><h4>Decision</h4><p>Focused on a unified mobile+web approach, prioritizing the instructor and admin dashboards first.</p><br/><h4>Metric Impact</h4><p>Streamlined booking journeys and reduced operational overhead by centralizing fragmented tools.</p><br/><h4>What I Owned</h4><p>Requirement shaping, stakeholder coordination, launch planning, and post-release iteration.</p>"
   }
 }
