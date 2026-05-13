@@ -28,6 +28,10 @@
   <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
 <body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
   <!-- Preloader -->
   <div class="preloader" id="preloader">
     <div class="preloader-inner">
@@ -128,7 +132,8 @@
   <section id="experience">
     <div class="container">
       <h2 class="section-title reveal">Experience</h2>
-      <div class="timeline">
+      <div class="timeline" id="experienceTimeline">
+        <div class="timeline-progress" id="timelineProgress"></div>
         <!-- Jio Platforms - Product Manager -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>

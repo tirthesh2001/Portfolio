@@ -465,3 +465,24 @@ if (projectsGrid && scrollPrevBtn && scrollNextBtn) {
     projectsGrid.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
   });
 }
+
+// Timeline Scroll Progress
+const experienceTimeline = document.getElementById('experienceTimeline');
+const timelineProgress = document.getElementById('timelineProgress');
+
+if (experienceTimeline && timelineProgress) {
+  window.addEventListener('scroll', () => {
+    const rect = experienceTimeline.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    
+    // Start filling when the timeline's top reaches the middle of the viewport
+    // End filling when the timeline's bottom reaches the middle of the viewport
+    const scrolled = (windowHeight / 2) - rect.top;
+    const timelineHeight = rect.height;
+    
+    let percentage = (scrolled / timelineHeight) * 100;
+    percentage = Math.max(0, Math.min(100, percentage));
+    
+    timelineProgress.style.height = `${percentage}%`;
+  });
+}
